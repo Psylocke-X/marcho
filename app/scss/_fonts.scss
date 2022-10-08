@@ -42,7 +42,8 @@
   font-family: "Roboto-Bold";
   font-weight: 700;
   font-style: normal;
-  src: local("Roboto-Bold"), url("Roboto-Bold.woff2") format("woff2"),
-    url("Roboto-Bold.woff") format("woff");
+  src: local("Roboto-Bold"),
+    url("../fonts/Roboto-Bold.woff2") format("woff2"),
+    url("../fonts/Roboto-Bold.woff") format("woff");
   font-display: swap;
 }
