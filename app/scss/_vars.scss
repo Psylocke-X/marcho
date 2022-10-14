@@ -2,25 +2,54 @@ $accent: #fe3e57;
 $default: #8d8d8d;
 $title: #29282d;
 $bg: #f6f6f6;
- 
 
-%quicksand-400{
+
+%quicksand-400 {
   font-family: 'Quicksand-Regular';
   font-weight: 400;
 }
-%quicksand-500{
+
+%quicksand-500 {
   font-family: 'Quicksand-Medium';
   font-weight: 500;
 }
-%roboto-400{
+
+%roboto-400 {
   font-family: 'Roboto-Regular';
   font-weight: 400;
 }
-%roboto-500{
+
+%roboto-500 {
   font-family: 'Roboto-Medium';
   font-weight: 500;
 }
-%roboto-700{
+
+%roboto-700 {
   font-family: 'Roboto-Bold';
   font-weight: 700;
+}
+
+%btn {
+  padding: 12px 26px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: $accent;
+  @extend %roboto-400;
+  box-shadow: 0px 7px 20px 0px rgba(255, 17, 48, 0.3);
+}
+
+%checkbox-hidden {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  position: absolute;
+}
+
+@function max($nambers ...) {
+  @return m#{a}x(#{$numbers});
+}
+
+@function min($nambers ...) {
+  @return m#{i}n(#{$numbers});
 }
